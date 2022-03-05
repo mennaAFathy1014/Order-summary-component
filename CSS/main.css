@@ -1,0 +1,148 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.parent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container {
+  width: 250px;
+  background-color: transparent;
+  border-image: round;
+  display: flex;
+  flex-direction: column;
+}
+.card-img {
+  position: relative;
+  width: calc(100% - 40 px);
+  background-image: url(../images/illustration-hero.svg);
+  background-size: 100% 100%;
+  height: 100px;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 1px 1px 20px 1px hsl(224, 23%, 55%);
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 40px);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 1px 20px 1px hsl(224, 23%, 55%);
+}
+.header {
+  padding: 10px;
+  font-weight: 900;
+}
+.content {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  font-size: 10px;
+}
+.subscription {
+  margin-top: 10px;
+  background-color: #f8f9fe;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.subscription img {
+  width: 30px;
+  height: 30px;
+}
+.annual {
+  font-weight: 700;
+  font-size: 12px;
+}
+.year {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #30303065;
+}
+.change {
+  padding: 10px;
+  text-decoration: underline;
+  font-size: 10px;
+  color: hsl(245, 75%, 52%);
+}
+.pay {
+  margin-top: 10px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  box-shadow: 0 2px 5px hsl(245, 75%, 52%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.cancel {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #30303065;
+}
+.change:hover,
+.pay:hover,
+.cancel:hover {
+  cursor: pointer;
+}
+.change:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.pay:hover {
+  background-color: hsl(245, 75%, 52%, 70%);
+}
+.cancel:hover {
+  color: black;
+}
+@media (min-width: 375px) {
+  .parent {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 98%);
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 750px) {
+  .parent {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 98%);
+    background-size: 100% 100%;
+  }
+}
+/* @media (min-width: 1440px) {
+  .parent {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 98%);
+    background-size: 100% 100%;
+  }
+} */
+.attribution {
+  margin-top: 10px;
+  font-size: 10px;
+}
+.attribution a {
+  font-size: 12px;
+}
